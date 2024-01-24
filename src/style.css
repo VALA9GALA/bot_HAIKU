@@ -1,6 +1,137 @@
+body {
+  font-family: Sora;
+  font-weight: 800;
+  margin-top: -10px;
+  background: #44e5d6;
+  background: -webkit-radial-gradient(
+    circle,
+    #44e5d6 0%,
+    #a7e168 50%,
+    #8bb4c1 100%
+  );
+  background: radial-gradient(circle, #44e5d6 0%, #a7e168 50%, #8bb4c1 100%);
+  background-size: 33%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
 h1 {
+  font-family: Climate Crisis;
+  letter-spacing: 22px;
+  font-size: 60px;
   text-align: center;
+  color: #44e5d6;
+  animation: glitter 3s alternate-reverse infinite;
+}
+@keyframes glitter {
+  0% {
+    text-shadow: 0 0 1px #0a82a7, 0 0 4px #0a82a7;
+  }
+  50% {
+    text-shadow: 0 0 4px #0a82a7, 0 0 8px #0a82a7;
+  }
+  100% {
+    text-shadow: 0 0 10px #44e5d6, 0 0 8px yellow;
+  }
+}
+.container {
+  background-color: rgba(167, 225, 104, 0.8);
+  box-shadow: 2px 5px 22px rgba(112, 195, 23, 0.7);
+  width: 380px;
+  margin: -20px auto;
+  padding: 20px;
+  border-radius: 22px;
+  border: 2px solid #8bb4c1;
+  display: block;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+.user-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 22px;
+  background-color: rgba(189, 225, 236, 0.9);
+  border: dashed #4795ad;
+  border-width: 4px;
+  font-family: Sora;
+}
+.user-input:focus {
+  outline: none;
+}
+.submit-btn {
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 11px;
+  border: 2px solid #4f9ab1;
+  box-shadow: 2px 5px 8px rgba(8, 84, 107, 0.5);
+  background-color: #0a82a7;
+  color: #44e5d6;
+
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-family: Sora;
+  font-weight: 800;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #44e5d6;
+  color: #0a82a7;
+  transition: 300ms ease-in-out;
+}
+small {
+  margin-left: 30px;
+  font-weight: 200;
+  color: #4795ad;
+  letter-spacing: 1px;
+}
+.poem {
+  color: #0b81a5;
+  letter-spacing: 8px;
+  background-color: rgba(240, 255, 255, 0.4);
+  box-shadow: 2px 5px 8px rgba(8, 84, 107, 0.5);
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #8bb4c1;
+  border-radius: 11px;
 }
 footer {
+  margin-top: 10px;
+  color: #08546b;
   text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+}
+footer a {
+  color: #0a82a7;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 120px 0;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  .container {
+    width: 80%;
+  }
+
+  .user-input {
+    width: 90%;
+  }
+  .submit-btn {
+    padding: 0 10px;
+  }
+  .poem {
+    width: 80%;
+  }
+  footer {
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }

@@ -3,36 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/bot_HAIKU-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Sora:wght@200;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>🌿bot_HAIKU</title>
   </head>
   <body>
     <header>
-      <h1>bot_HAIKU</h1>
+      <h1>bot_ <br />HAIKU</h1>
     </header>
-    <main>
-      <form action="submit">
-        <input
-          type="text"
-          placeholder="A seed to sow..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" value="Grow" />
-      </form>
-      <div>
-        Rest light
-        <br />
-        on a carpet
-        <br />
-        of
-        <br />
-        crimson
-        <br />
-        demeanor
-      </div>
-    </main>
+    <div class="container">
+      <main>
+        <form action="submit">
+          <input
+            type="text"
+            placeholder="A seed to sow..."
+            autofocus
+            required
+            autocomplete="off"
+            class="user-input"
+          />
+          <input type="submit" value="Grow" class="submit-btn" />
+        </form>
+        <small>Enter a topic for Haiku</small>
+        <div class="poem">
+          Rest light
+          <br />
+          on a carpet
+          <br />
+          of
+          <br />
+          crimson
+          <br />
+          demeanor
+        </div>
+      </main>
+    </div>
+    <br />
     <footer>
       This project was coded by
       <a
@@ -47,7 +63,7 @@
         target="_blank"
         rel="noopener noreferrer"
         >Github</a
-      >.<br />See also:
+      >. <br />See also:
       <a
         href="https://bot-poet.netlify.app/"
         target="_blank"
