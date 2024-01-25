@@ -89,7 +89,7 @@ small {
 }
 .haiku {
   color: #0b81a5;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   background-color: rgba(240, 255, 255, 0.4);
   box-shadow: 3px 3px 5px rgba(71, 149, 173, 0.3);
   padding: 10px;
@@ -115,13 +115,13 @@ strong {
 }
 footer {
   margin-top: 10px;
-  color: #08546b;
+  color:#4f9ab1;
   text-align: center;
   font-size: 14px;
   font-weight: 200;
 }
 footer a {
-  color: #0a82a7;
+  color:#0b81a5;
 }
 
 @media (max-width: 800px) {
