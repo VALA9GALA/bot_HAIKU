@@ -87,11 +87,11 @@ small {
   color: #4795ad;
   letter-spacing: 1px;
 }
-.poem {
+.haiku {
   color: #0b81a5;
   letter-spacing: 8px;
   background-color: rgba(240, 255, 255, 0.4);
-  box-shadow: 2px 5px 8px rgba(8, 84, 107, 0.5);
+  box-shadow: 3px 3px 5px rgba(71, 149, 173, 0.3);
   padding: 10px;
   margin: 10px auto;
   text-align: center;
@@ -113,16 +113,17 @@ footer a {
   body {
     margin: 120px 0;
     overflow-x: hidden;
+    background-position: fixed;
   }
   h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
   .container {
     width: 80%;
   }
 
   .user-input {
-    width: 90%;
+    width: 80%;
   }
   .submit-btn {
     padding: 0 10px;

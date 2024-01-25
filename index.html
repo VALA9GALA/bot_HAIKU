@@ -8,6 +8,8 @@
       href="img/bot_HAIKU-icon.png"
       type="image/x-icon"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +25,7 @@
     </header>
     <div class="container">
       <main>
-        <form action="submit">
+        <form action="submit" id="input-form">
           <input
             type="text"
             placeholder="A seed to sow..."
@@ -35,17 +37,7 @@
           <input type="submit" value="Grow" class="submit-btn" />
         </form>
         <small>Enter a topic for Haiku</small>
-        <div class="poem">
-          Rest light
-          <br />
-          on a carpet
-          <br />
-          of
-          <br />
-          crimson
-          <br />
-          demeanor
-        </div>
+        <div class="haiku" id="haiku"></div>
       </main>
     </div>
     <br />
